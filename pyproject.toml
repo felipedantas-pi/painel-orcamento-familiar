@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "orcamento-familiar"
+version = "0.1.0"
+description = ""
+authors = ["felipedantas-pi <tecnologo.felipedantas@gmail.com>"]
+readme = "README.md"
+packages = [{include = "orcamento_familiar"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.22.0"
+pandas = "^2.0.1"
+openpyxl = "^3.1.2"
+streamlit-option-menu = "^0.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

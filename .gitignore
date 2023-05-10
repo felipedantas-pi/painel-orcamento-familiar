@@ -1,0 +1,8 @@
+*.venv
+
+*assets/example/dataset_full.xlsx
+
+orcamento_familiar/
+
+tests/
+
