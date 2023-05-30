@@ -6,7 +6,7 @@ from datetime import datetime
 #@st.cache_data
 def load_cardCredit(sheet_name):
   df = pd.read_excel(
-      io='dataset/dataset_full.xlsx',
+      io='./assets/dataset/dataset_full.xlsx',
       engine='openpyxl',
       sheet_name=sheet_name,
       decimal=','

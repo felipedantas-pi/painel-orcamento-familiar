@@ -1,5 +1,4 @@
 import pandas as pd
-import streamlit as st
 
 # Carregador os dados
 
@@ -11,12 +10,7 @@ def load_dataset(sheet_name: str) -> object:
 
   Returns: object: A pandas DataFrame with the loaded and preprocessed dataset.
   """
-  df = pd.read_excel(
-      io='dataset/dataset_full.xlsx',
-      engine='openpyxl',
-      sheet_name=sheet_name,
-      decimal=','
-  )
+  df = pd.read_excel(io='assets/datasets/dataset_full.xlsx', engine='openpyxl', sheet_name=sheet_name, decimal=',')
   df.insert(1, column='mes', value=df["data"].dt.month)
   df['data'] = df['data'].sort_values().dt.date
   return df

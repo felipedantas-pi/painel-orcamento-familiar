@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-from components import load_dataset
+from components import config
 
-df_receita = load_dataset('receita')
+df_receita = config.load_dataset('receita')
 
 #df_receita = load_receita('receita')
 #st.dataframe(df_receita, use_container_width=True)

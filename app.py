@@ -35,7 +35,7 @@ sidebar_container = st.container()
 with sidebar_container:
   st.sidebar.title("MyBudget")
   st.sidebar.write("by Felipe Dantas")
-  st.sidebar.image("./assets/img_fam.png", use_column_width="always")
+  st.sidebar.image("./assets/images/img_fam.png", use_column_width="always")
   #st.sidebar.markdown("---")
 
 pages_names = ['Receitas', 'Despesas']
